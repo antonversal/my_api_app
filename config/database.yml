@@ -1,0 +1,18 @@
+development:
+  adapter: postgresql
+  encoding: unicode
+  database: my_api_app_development
+  username:
+  password:
+  host: 127.0.0.1
+
+test: &test
+  adapter: postgresql
+  encoding: unicode
+  database: my_api_app_test
+  username:
+  password:
+  host: 127.0.0.1
+
+cucumber:
+  <<: *test
